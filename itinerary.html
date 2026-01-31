@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本旅遊行程 - Japan Trip Itinerary</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f5f5; color: #333; line-height: 1.6; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden; }
+        header { background: #ff6b6b; color: #fff; padding: 30px; text-align: center; }
+        header h1 { font-size: 1.8em; margin-bottom: 5px; }
+        header p { opacity: 0.9; }
+        .trip-info { background: #fff; padding: 20px 30px; border-bottom: 1px solid #eee; display: flex; gap: 20px; flex-wrap: wrap; }
+        .trip-info div { display: flex; align-items: center; gap: 8px; }
+        .day { margin: 0; }
+        .day-header { background: #333; color: #fff; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; }
+        .day-header h2 { font-size: 1.2em; }
+        .day-header span { font-size: 0.9em; opacity: 0.8; }
+        .day-content { padding: 20px 25px; }
+        .schedule-item { display: flex; gap: 15px; padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
+        .schedule-item:last-child { border-bottom: none; }
+        .time { font-weight: 600; color: #ff6b6b; min-width: 70px; }
+        .activity { flex: 1; }
+        .activity strong { display: block; margin-bottom: 3px; }
+        .activity p { font-size: 0.9em; color: #666; }
+        .notes { background: #fffde7; padding: 15px 25px; border-top: 1px solid #eee; }
+        .notes h3 { font-size: 1em; margin-bottom: 10px; color: #f57c00; }
+        .notes ul { margin-left: 20px; font-size: 0.9em; }
+        .notes li { margin-bottom: 5px; }
+        footer { text-align: center; padding: 20px; color: #999; font-size: 0.85em; }
+        @media (max-width: 600px) {
+            .day-header { flex-direction: column; gap: 5px; text-align: center; }
+            .schedule-item { flex-direction: column; gap: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🇯🇵 日本旅遊行程</h1>
+            <p>Japan Travel Itinerary</p>
+        </header>
+
+        <div class="trip-info">
+            <div>📅 <strong>2026年 2月 2日 - 6日</strong></div>
+            <div>📍 <strong>東京 / Tokyo</strong></div>
+        </div>
+
+        <!-- Monday -->
+        <div class="day">
+            <div class="day-header">
+                <h2>Day 1 (一)</h2>
+                <span>2/3 (Mon)</span>
+            </div>
+            <div class="day-content">
+                <div class="schedule-item">
+                    <span class="time">09:00</span>
+                    <div class="activity">
+                        <strong>抵達東京成田機場</strong>
+                        <p>Arrive at Narita Airport</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">11:00</span>
+                    <div class="activity">
+                        <strong>Check-in 飯店</strong>
+                        <p>Hotel check-in & rest</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">14:00</span>
+                    <div class="activity">
+                        <strong>淺草寺、雷門</strong>
+                        <p>Senso-ji Temple, Kaminarimon</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">18:00</span>
+                    <div class="activity">
+                        <strong>東京晴空塔夜景</strong>
+                        <p>Tokyo Skytree evening view</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tuesday -->
+        <div class="day">
+            <div class="day-header">
+                <h2>Day 2 (二)</h2>
+                <span>2/4 (Tue)</span>
+            </div>
+            <div class="day-content">
+                <div class="schedule-item">
+                    <span class="time">09:00</span>
+                    <div class="activity">
+                        <strong>上野恩賜公園</strong>
+                        <p>Ueno Park</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">12:00</span>
+                    <div class="activity">
+                        <strong>阿美橫丁午餐</strong>
+                        <p>Ameyoko Market lunch</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">14:00</span>
+                    <div class="activity">
+                        <strong>秋葉原</strong>
+                        <p>Akihabara - electronics & anime</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">18:00</span>
+                    <div class="activity">
+                        <strong>東京車站周邊</strong>
+                        <p>Tokyo Station & surroundings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wednesday -->
+        <div class="day">
+            <div class="day-header">
+                <h2>Day 3 (三)</h2>
+                <span>2/5 (Wed)</span>
+            </div>
+            <div class="day-content">
+                <div class="schedule-item">
+                    <span class="time">08:00</span>
+                    <div class="activity">
+                        <strong>築地場外市場</strong>
+                        <p>Tsukiji Outer Market breakfast</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">10:00</span>
+                    <div class="activity">
+                        <strong>銀座逛街</strong>
+                        <p>Ginza shopping district</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">14:00</span>
+                    <div class="activity">
+                        <strong>表參道、竹下通</strong>
+                        <p>Omotesando, Takeshita Street</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">18:00</span>
+                    <div class="activity">
+                        <strong>澀谷十字路口</strong>
+                        <p>Shibuya Crossing & nightlife</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thursday -->
+        <div class="day">
+            <div class="day-header">
+                <h2>Day 4 (四)</h2>
+                <span>2/6 (Thu)</span>
+            </div>
+            <div class="day-content">
+                <div class="schedule-item">
+                    <span class="time">09:00</span>
+                    <div class="activity">
+                        <strong>新宿御苑</strong>
+                        <p>Shinjuku Gyoen National Garden</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">12:00</span>
+                    <div class="activity">
+                        <strong>新宿午餐 & 逛街</strong>
+                        <p>Shinjuku lunch & shopping</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">15:00</span>
+                    <div class="activity">
+                        <strong>明治神宮</strong>
+                        <p>Meiji Shrine</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">18:00</span>
+                    <div class="activity">
+                        <strong>六本木夜景</strong>
+                        <p>Roppongi Hills observation deck</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Friday -->
+        <div class="day">
+            <div class="day-header">
+                <h2>Day 5 (五)</h2>
+                <span>2/7 (Fri)</span>
+            </div>
+            <div class="day-content">
+                <div class="schedule-item">
+                    <span class="time">10:00</span>
+                    <div class="activity">
+                        <strong>台場</strong>
+                        <p>Odaiba - Fuji TV, Statue of Liberty</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">13:00</span>
+                    <div class="activity">
+                        <strong>豐洲市場 / TeamLab</strong>
+                        <p>Toyosu Market or TeamLab Borderless</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">16:00</span>
+                    <div class="activity">
+                        <strong>返回飯店 & 整理行李</strong>
+                        <p>Return to hotel & pack</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">19:00</span>
+                    <div class="activity">
+                        <strong>前往機場 / 機場晚餐</strong>
+                        <p>Head to Narita Airport</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="notes">
+            <h3>📝 備註 Notes</h3>
+            <ul>
+                <li>Suica/IC卡必備 💳</li>
+                <li>手機網路 / WiFi Egg</li>
+                <li>外套保暖，東京約 5-10°C</li>
+                <li>預約餐廳請提前</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Made with 🤖 Bob | 2026 Japan Trip</p>
+        </footer>
+    </div>
+</body>
+</html>
